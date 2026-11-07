@@ -13,14 +13,14 @@ Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
 
 ## 在做的事
 
-**[HyperPGuard](https://github.com/vivibibi30/hyperpguard)** — 给小米 / 红米 HyperOS 的预装组件加一层可控的开关，在采集入口、本地存储、对外接口、网络出口四个环节拦掉隐私上报。按应用分组，开关与作用域实时联动，libxposed API 102（`staticScope`），GPL-3.0。
+**[HyperPGuard](https://github.com/vivibibi30/hyperpguard)** — 给小米 / 红米 HyperOS 的预装组件加一层可控的开关，在采集入口、本地存储、对外接口、网络出口四个环节拦掉隐私上报。按应用分组，开关与作用域实时联动；覆盖 11 个预装组件（含移动 DM `com.miui.dmregservice`），设备标识与敏感数据按应用单独开关，libxposed API 102（`staticScope`），GPL-3.0。
 
 | 环节 | 拦截对象 |
 |---|---|
 | 网络出口 | 目标进程内的 `URL` / `InetAddress` / `Socket`，规则为「域名后缀 + 路径」 |
 | 本地存储 | 行为库 `SQLiteDatabase` 的 insert / update / delete / execSQL，按表名过滤 |
-| 对外接口 | `XSOFProvider` 三入口、`MiSafetyDetectService` 7 个方法、评分与鉴权 |
-| 采集入口 | 应用列表 / 使用记录 / 标识 / 短信、静默录屏 `createVirtualDisplay` |
+| 对外接口 | `XSOFProvider` 三入口、`MiSafetyDetectService` 的回调型方法（按末参 `IMiSafetyDetectCallback` 匹配）、评分与鉴权 |
+| 采集入口 | 应用列表 / 使用记录 / 短信、静默录屏 `createVirtualDisplay`；设备标识与敏感数据按应用分项开关 |
 
 识别目标靠静态逆向加真机验证：`jadx` / `apktool` 拆组件、`d8` 重打包试钩、`logcat` 看命中与 miss。组件混淆名逐版本变化，所以方法层只做签名扫描，能兜住的部分交给框架 API。
 
@@ -28,7 +28,7 @@ Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
 
 | 仓库 | 说明 | 状态 |
 |---|---|---|
-| [hyperpguard](https://github.com/vivibibi30/hyperpguard) | HyperOS 隐私上报拦截模块（LSPosed） | Java · GPL-3.0 · v1.2.2 |
+| [hyperpguard](https://github.com/vivibibi30/hyperpguard) | HyperOS 隐私上报拦截模块（LSPosed） | Java · GPL-3.0 |
 | [ghostlock-app](https://github.com/vivibibi30/ghostlock-app) | GhostLock 一键利用（CVE-2026-43499），fork 自 [YukongA/ghostlock-app](https://github.com/YukongA/ghostlock-app) | Kotlin · fork |
 
 ## 工具箱
