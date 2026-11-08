@@ -2,7 +2,7 @@
 
 ### vivibibi
 
-Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
+Android 系统分析 · HyperOS 预装组件研究 · LSPosed 模块
 
 [![followers](https://img.shields.io/github/followers/vivibibi30?style=flat-square&label=followers&color=0969da)](https://github.com/vivibibi30)
 [![hyperpguard stars](https://img.shields.io/github/stars/vivibibi30/hyperpguard?style=flat-square&label=hyperpguard%20stars&color=0969da)](https://github.com/vivibibi30/hyperpguard/stargazers)
@@ -22,7 +22,7 @@ Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
 | 对外接口 | `XSOFProvider` 三入口、`MiSafetyDetectService` 的回调型方法（按末参 `IMiSafetyDetectCallback` 匹配）、评分与鉴权 |
 | 采集入口 | 应用列表 / 使用记录 / 短信、静默录屏 `createVirtualDisplay`；设备标识与敏感数据按应用分项开关 |
 
-识别目标靠静态逆向加真机验证：`jadx` / `apktool` 拆组件、`d8` 重打包试钩、`logcat` 看命中与 miss。组件混淆名逐版本变化，所以方法层只做签名扫描，能兜住的部分交给框架 API。
+识别目标靠静态分析与真机验证：`jadx` / `apktool` 拆组件、`d8` 重打包试钩、`logcat` 看命中与 miss。组件混淆名逐版本变化，所以方法层只做签名扫描，能兜住的部分交给框架 API。
 
 模块内带诊断面板：各应用注入状态、行为库写入计数、按未拦截 / 已拦截分段的日志。维护按需进行，只在出现影响使用的缺陷或发现新的上报通道时发版。
 
