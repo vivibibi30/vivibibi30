@@ -13,7 +13,7 @@ Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
 
 ## 在做的事
 
-**[HyperPGuard](https://github.com/vivibibi30/hyperpguard)** — 给小米 / 红米 HyperOS 的预装组件加一层可控的开关，在采集入口、本地存储、对外接口、网络出口四个环节拦掉隐私上报。按应用分组，开关与作用域实时联动；覆盖 11 个预装组件（含移动 DM `com.miui.dmregservice`），设备标识与敏感数据按应用单独开关，libxposed API 102（`staticScope`），GPL-3.0。
+**[HyperPGuard](https://github.com/vivibibi30/hyperpguard)** — 给小米 / 红米 HyperOS 的预装组件加一层可控的开关，在采集入口、本地存储、对外接口、网络出口四个环节拦掉隐私上报。按应用分组，开关与作用域实时联动；覆盖 12 个预装组件（含移动 DM `com.miui.dmregservice`、系统诊断 `com.miui.misightservice`），设备标识与敏感数据按应用单独开关，支持自定义域名 / 路径规则，libxposed API 102（`staticScope`），GPL-3.0。
 
 | 环节 | 拦截对象 |
 |---|---|
@@ -23,6 +23,8 @@ Android 逆向 · HyperOS 预装组件分析 · LSPosed 模块
 | 采集入口 | 应用列表 / 使用记录 / 短信、静默录屏 `createVirtualDisplay`；设备标识与敏感数据按应用分项开关 |
 
 识别目标靠静态逆向加真机验证：`jadx` / `apktool` 拆组件、`d8` 重打包试钩、`logcat` 看命中与 miss。组件混淆名逐版本变化，所以方法层只做签名扫描，能兜住的部分交给框架 API。
+
+模块内带诊断面板：各应用注入状态、行为库写入计数、按未拦截 / 已拦截分段的日志。维护按需进行，只在出现影响使用的缺陷或发现新的上报通道时发版。
 
 ## 项目
 
