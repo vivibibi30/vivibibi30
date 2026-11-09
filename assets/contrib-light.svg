@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="740" height="165" viewBox="0 0 740 165" role="img" aria-label="近一年 156 次贡献">
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="165" viewBox="0 0 740 165" role="img" aria-label="近一年 194 次贡献">
 <rect x="0.5" y="0.5" width="739" height="164" rx="12" fill="#ffffff" stroke="#d0d7de"/>
-<text x="34" y="23" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#1f2328">近一年 <tspan font-weight="600">156</tspan> 次贡献</text>
+<text x="34" y="23" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#1f2328">近一年 <tspan font-weight="600">194</tspan> 次贡献</text>
 <text x="26" y="67" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">Mon</text>
 <text x="26" y="93" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">Wed</text>
 <text x="26" y="119" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">Fri</text>
@@ -381,7 +381,8 @@
 <rect x="697" y="98" width="10" height="10" rx="2.5" fill="#ebedf0"/>
 <rect x="697" y="111" width="10" height="10" rx="2.5" fill="#216e39"/>
 <rect x="697" y="124" width="10" height="10" rx="2.5" fill="#216e39"/>
-<rect x="710" y="46" width="10" height="10" rx="2.5" fill="#40c463"/>
+<rect x="710" y="46" width="10" height="10" rx="2.5" fill="#216e39"/>
+<rect x="710" y="59" width="10" height="10" rx="2.5" fill="#9be9a8"/>
 <text x="650" y="161" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">少</text>
 <rect x="658" y="153" width="10" height="10" rx="2.5" fill="#ebedf0"/>
 <rect x="671" y="153" width="10" height="10" rx="2.5" fill="#9be9a8"/>
@@ -389,5 +390,5 @@
 <rect x="697" y="153" width="10" height="10" rx="2.5" fill="#30a14e"/>
 <rect x="710" y="153" width="10" height="10" rx="2.5" fill="#216e39"/>
 <text x="727" y="161" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">多</text>
-<text x="34" y="161" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">更新于 2026-11-08</text>
+<text x="34" y="161" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#59636e">更新于 2026-11-09</text>
 </svg>
