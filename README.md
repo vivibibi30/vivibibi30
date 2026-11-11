@@ -1,8 +1,9 @@
 <div align="center">
 
-### vivibibi
-
-Android 系统分析 · HyperOS 预装组件研究 · LSPosed 模块
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img alt="vivibibi — Android 系统分析 · HyperOS 预装组件研究 · LSPosed 模块开发" src="assets/hero-light.svg" width="740">
+</picture>
 
 [![followers](https://img.shields.io/github/followers/vivibibi30?style=flat-square&label=followers&color=0969da)](https://github.com/vivibibi30)
 [![hyperpguard stars](https://img.shields.io/github/stars/vivibibi30/hyperpguard?style=flat-square&label=hyperpguard%20stars&color=0969da)](https://github.com/vivibibi30/hyperpguard/stargazers)
