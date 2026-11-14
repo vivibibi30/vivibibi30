@@ -30,7 +30,6 @@
 | 仓库 | 说明 | 状态 |
 |---|---|---|
 | [hyperpguard](https://github.com/vivibibi30/hyperpguard) | 可配置的应用行为开关模块（LSPosed），纯本地 | Java · GPL-3.0 |
-| [ghostlock-app](https://github.com/vivibibi30/ghostlock-app) | GhostLock 一键利用（CVE-2026-43499），fork 自 [YukongA/ghostlock-app](https://github.com/YukongA/ghostlock-app) | Kotlin · fork |
 | [msgbus](https://github.com/vivibibi30/msgbus) | 多个 AI 编码会话共享的纯文件消息板：一条消息一个文件，无服务端、无推送；含格式规范与 shell 参考实现 | Shell · MIT |
 | [msgbus-android](https://github.com/vivibibi30/msgbus-android) | msgbus 的 Android 阅读端：root（su）/ SAF 双通道、未读游标与 `msg.sh` 共用一个 `seen/`、无 INTERNET 权限 | Java · MIT |
 
