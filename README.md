@@ -1,9 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=2">
-  <img alt="vivibibi — Android 工具开发 · LSPosed 模块 · 本地可验证" src="assets/hero-light.svg?v=2" width="520" height="132">
-</picture>
+<img alt="vivibibi" src="assets/hero.svg?v=3" width="520" height="160">
 
 </div>
 
